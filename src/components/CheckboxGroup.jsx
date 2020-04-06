@@ -11,9 +11,8 @@ class CheckboxGroup extends React.Component {
                 hobbies: [...this.state.hobbies, e.target.name]
             })
         } else {
-            let indexToDelete = this.state.hobbies.indexOf(e.target.name)
             this.setState({
-                hobbies: this.state.hobbies.splice(indexToDelete, 1)
+                hobbies: this.state.hobbies.filter(item => item !== e.target.name)
             })
         }
         console.log(this.state.hobbies)

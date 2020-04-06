@@ -8,7 +8,7 @@ class Input extends React.Component {
 
     handleInputChange = (e) => {
         this.setState({value: e.target.value})
-        this.props.handleChange(e.target.value)
+        this.props.handleChange(e.target.value, e.target.name)
     }
 
     handleBlur = () => {
@@ -18,7 +18,7 @@ class Input extends React.Component {
 
     render() {
 
-        const { name, validate, handleChange } = this.props;
+        const { name } = this.props;
 
         return (
             <div className='flex'>

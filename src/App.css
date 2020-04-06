@@ -36,3 +36,36 @@ input[type='text'] {
   width: 200px;
   height: 25px;
 }
+
+.radio {
+  display: none;
+}
+.radioGroup {
+  position: relative;
+  padding: 5px;
+}
+
+.radioLabel {
+  padding-left: 25px;
+}
+
+.radioLabel::before {
+  content: '';
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  border: 3px solid rgb(117, 151, 117);
+}
+
+.radio:checked~label::after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  position: absolute;
+  left: 6px;
+  top: 10px;
+  background-color: rgb(117, 151, 117);;
+}
