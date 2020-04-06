@@ -67,5 +67,31 @@ input[type='text'] {
   position: absolute;
   left: 6px;
   top: 10px;
-  background-color: rgb(117, 151, 117);;
+  background-color: rgb(117, 151, 117);
+}
+
+table {
+  width: 300px;
+  margin: auto;
+  border-collapse: collapse;
+}
+
+caption {
+  font-size: 21px;
+  margin-bottom: 10px;
+  color: rgb(117, 151, 117);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+th {
+  border: 1px solid rgb(117, 151, 117);
+  padding: 10px 30px;
+  background-color: rgb(250, 212, 165);
+}
+
+td {
+  border: 1px solid rgb(117, 151, 117);
+  background-color: bisque;
+  padding: 5px;
 }
